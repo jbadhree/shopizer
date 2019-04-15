@@ -6,7 +6,7 @@ Shopizer (for java 1.8 +)
 [![stackoverflow](https://img.shields.io/badge/shopizer-stackoverflow-orange.svg?style=flat)](http://stackoverflow.com/questions/tagged/shopizer)
 -------------------
 
-Test commit for webhook with manual setup = attempt 3
+Test commit for webhook with manual setup = attempt 4
 
 Java open source e-commerce software
 
