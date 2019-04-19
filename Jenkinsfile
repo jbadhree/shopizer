@@ -30,9 +30,14 @@ pipeline {
             echo '******************* GitHub Release Completed *******************'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sleep 1
+          }
+        }
+        stage('') {
+          steps {
+            sleep 2
           }
         }
       }
