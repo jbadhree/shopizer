@@ -26,6 +26,7 @@ pipeline {
       steps {
         echo '******************* GitHub Release Started *******************'
         echo '******************* GitHub Release Completed *******************'
+        cp sm-shop/target/ROOT.war /home/ansadmin
       }
     }
   }
