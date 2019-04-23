@@ -23,23 +23,9 @@ pipeline {
       }
     }
     stage('Release') {
-      parallel {
-        stage('Release') {
-          steps {
-            echo '******************* GitHub Release Started *******************'
-            echo '******************* GitHub Release Completed *******************'
-          }
-        }
-        stage('error') {
-          steps {
-            sleep 1
-          }
-        }
-        stage('') {
-          steps {
-            sleep 2
-          }
-        }
+      steps {
+        echo '******************* GitHub Release Started *******************'
+        echo '******************* GitHub Release Completed *******************'
       }
     }
   }
