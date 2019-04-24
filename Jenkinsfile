@@ -26,7 +26,7 @@ pipeline {
       steps {
         echo '******************* GitHub Release Started *******************'
         echo '******************* GitHub Release Completed *******************'
-        sh 'cp sm-shop/target/ROOT.war /filecopy'
+        sh 'sudo -u ansadmin scp sm-shop/target/ROOT.war ansadmin@172.31.26.224:/filecopy'
       }
     }
   }
