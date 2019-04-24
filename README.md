@@ -1,4 +1,4 @@
-Test 5
+Test 6
 
 Shopizer (for java 1.8 +)
 -------------------
