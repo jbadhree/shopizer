@@ -27,6 +27,7 @@ pipeline {
         echo '******************* GitHub Release Started *******************'
         echo '******************* GitHub Release Completed *******************'
         sh 'sudo -u ansadmin scp sm-shop/target/ROOT.war ansadmin@172.31.26.224:/filecopy'
+        sh 'sudo -u ansadmin ssh ansadmin@172.31.26.224 ansible-playbook /etc/ansible/shopizerDeploy.yml'
       }
     }
   }
