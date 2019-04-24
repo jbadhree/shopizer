@@ -28,6 +28,7 @@ pipeline {
         echo '******************* GitHub Release Completed *******************'
         sh 'sudo -u ansadmin scp sm-shop/target/ROOT.war ansadmin@172.31.26.224:/filecopy'
         sh 'sudo -u ansadmin ssh ansadmin@172.31.26.224 ansible-playbook /etc/ansible/shopizerDeploy.yml'
+        sh 'sudo -u ansadmin ssh ansadmin@172.31.26.224 sudo -u ansadmin ssh ansadmin@172.31.23.1 /home/ansadmin/apache-tomcat-8.5.40/bin/startup.sh'
       }
     }
     stage('Load Test Data') {
